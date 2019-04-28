@@ -1,0 +1,11 @@
+<% include partials/header %>
+        <h1> Signup</h1>
+        
+        <form action="/signup" method="POST">
+            <input type= "text" name="name" placeholder="Enter your name " pattern="[a-zA-Z0-9-]+" title="Numbers and Letters only" required>
+            
+            <input type= "text" name="username" placeholder="Enter your username " pattern="[a-zA-Z0-9-]+" title="Numbers and Letters only" required>
+            <input type="password" name="password" placeholder="Enter your password" pattern="[a-zA-Z0-9-]+" title="Numbers and Letters only" required>
+            <button> Sign Up </button>
+        </form>
+        <% include partials/footer %>

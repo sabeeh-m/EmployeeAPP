@@ -1,0 +1,20 @@
+<% include partials/header %>
+        
+    <h4> Welcome back, <%=data.name%>  </h4>
+    <%if (error.lenght>0) { %>
+    <%=error %>
+    <% } else if(success.length>0  ) { %>
+    <%= success %>
+    <% } %>
+    
+    
+    <div>Your current status is:<%= data.status %> </div>
+    <a href="/logout">Logout</a>
+        <div><a href="/status">See Colleagues Status</a> </div>
+        <div><form action="/status/<%=data._id%>?_method=PUT" method="POST">
+            
+            <input type="text" name="statusinput">
+            <button>Update</button>
+        </form> </div>
+        
+    <% include partials/footer %>

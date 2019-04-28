@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Demo Employee App
+        </title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet"  href="styles/style.css" type="text/css">
+    </head>
+    
+    
+    <body>
+<div class="container">   
+
+<% if(error && error.length > 0){ %>
+<div class="alert alert-danger" role="alert"> <%= error %> </div>
+
+<% } %>
+<% if(success && success.length > 0) { %>
+<div class="alert alert-success" role="alert"> <%= success %> </div>
+<% } %>
+ </div>
+
+<div class="container">

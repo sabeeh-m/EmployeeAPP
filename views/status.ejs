@@ -1,0 +1,19 @@
+<% include partials/header %>
+        
+    <h4> Current Working Status:   </h4>
+        <% data.forEach(function(user){ %>
+            
+            <div class="userinfo"> 
+            
+                
+                
+            
+            <span class="namespan"> name: <%=user.name%>   </span> <span class="statusspan">status: <%=user.status%>  </span> <span class="loginspan"> Since :<%= user.updatedAt %>  </span>
+           
+    </div>        
+            
+            
+     <%    }) %>
+    
+    
+    <% include partials/footer %>
